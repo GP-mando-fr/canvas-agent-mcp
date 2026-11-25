@@ -1,0 +1,40 @@
+{
+  "name": "canvas-agent-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) server for Canvas LMS. Manage courses, duplicate content, adjust due dates, and audit academic workflows with Claude and AI agents.",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "canvas-agent-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "canvas-lms",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai-agent",
+    "anthropic",
+    "edtech",
+    "instructure"
+  ],
+  "author": "Ed-tech GP",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
